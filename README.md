@@ -1,4 +1,4 @@
-1. STP-7677
+<!-- 1. STP-7677
    https://play.google.com/store/apps/details?id=com.mergegames.taylorsecret
    Technical Specification for Landing Page of "Taylor's Secret: Merge Story"
    Favicons: 500x500 px, 16x16 px Приклад:
@@ -9,7 +9,7 @@
    vibrant colors. Integrate sleek typography with whimsical accents to match
    the game's mystery and merging mechanics.
 
-<!-- Sections -->
+- Sections
 
 1. Home
 
@@ -105,4 +105,4 @@
 
 - Links: Privacy Policy | Terms of Service
 - Center Note: "©2024 WinFusionQuest.com, All Rights Reserved."
-- CTA: "Help Taylor uncover her secret today! Download now."
+- CTA: "Help Taylor uncover her secret today! Download now." -->
