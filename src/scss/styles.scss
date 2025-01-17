@@ -1,18 +1,40 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './meet-taylor.scss';
+@import './about.scss';
+@import './benefits.scss';
+@import './features.scss';
+@import './gallery.scss';
+@import './how-to-play.scss';
+@import './why-choose-this-game.scss';
+@import './faq.scss';
+@import './reviews.scss';
+@import './reviews.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff8eb;
+  color: #242424;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+@media screen and (min-width: 320px) {
+  .container {
+    width: 288px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1320px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
 }
