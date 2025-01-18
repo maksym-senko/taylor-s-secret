@@ -1,0 +1,111 @@
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 120px;
+}
+
+.upper-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.left-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.title-box,
+.arrow-box {
+  border-radius: 24px;
+  padding: 40px;
+  width: 424px;
+  height: 90px;
+  display: flex; /* Додаємо flexbox */
+  align-items: center; /* Вирівнюємо по вертикалі */
+  justify-content: center; /* Вирівнюємо по горизонталі */
+}
+
+.title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #0b1215; /* Додано символ # для коректного кольору */
+}
+
+.title-box {
+  background-color: #91ba78;
+}
+
+.arrow-box {
+  border: 1px solid #0b1215;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  width: 242px;
+  height: 60px;
+}
+
+.benefit-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-radius: 24px;
+  padding: 40px;
+  width: 424px;
+  height: 204px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.benefit-box h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: 0B1215;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.benefit-box p {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* Кольори для кожного квадрата */
+.box-2 {
+  background-color: #eeabc4;
+}
+
+.box-3 {
+  background-color: #9dc4ea;
+}
+
+.box-4 {
+  background-color: #9dc4ea;
+}
+
+.box-5 {
+  border: 1px solid #0b1215;
+  border-radius: 24px;
+  padding: 40px;
+  width: 424px;
+  height: 204px;
+}
+
+.box-6 {
+  background-color: #91ba78;
+}
