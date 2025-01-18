@@ -1,0 +1,71 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Контейнер для абсолютного позиціонування іконок */
+  margin-top: 120px;
+}
+/* Іконки */
+.decoration-icon-blue {
+  position: absolute;
+  top: 80px; /* Відступ зверху від краю контейнера */
+  left: 145px; /* Відступ зліва від краю контейнера */
+  width: 92px;
+  height: 92px;
+  z-index: 0; /* Під текстом */
+}
+
+.decoration-icon-pink {
+  position: absolute;
+  bottom: -12px; /* Відступ зверху від краю контейнера */
+  right: 159px; /* Відступ справа від краю контейнера */
+  width: 126px;
+  height: 127px;
+  z-index: 0; /* Під текстом */
+}
+
+.decoration-icon-green {
+  position: absolute;
+  top: -33px; /* Відступ зверху від краю контейнера */
+  right: 81px; /* Відступ справа від краю контейнера */
+  width: 93px;
+  height: 94px;
+  z-index: 0; /* Під текстом */
+}
+
+.about-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  padding: 12px 24px;
+  width: 318px;
+  height: 70px;
+  transform: rotate(4deg);
+  font-family: 'Lilita One', sans-serif;
+  color: #0b1215;
+  background-color: #eeabc4;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.2;
+
+  margin-left: 336px; /* Більший відступ зліва */
+  position: relative;
+  z-index: 1; /* Заголовок над іконками */
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-p {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 648px; /* Фіксована ширина для тексту */
+}
