@@ -1,0 +1,91 @@
+#faq {
+  text-align: center;
+  margin-top: 120px;
+
+  .faq-title {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #0b1215;
+    font-family: 'Lilita One', sans-serif;
+    margin-bottom: 32px;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .question-element {
+    list-style: none;
+  }
+
+  .question-box {
+    background-color: transparent;
+    border: 1px solid #0b1215;
+    border-radius: 24px;
+    padding: 24px;
+    width: 1320px;
+    height: 96px; /* Висота до відкриття */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease,
+      height 0.3s ease;
+    position: relative; /* Додаємо для коректного позиціонування іконки */
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування */
+    align-items: flex-start; /* Відповідь ліворуч */
+    justify-content: center; /* Вертикальне вирівнювання питання */
+
+    .question {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0; /* Щоб відступи не впливали на розташування */
+    }
+
+    .toggle-icon {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%; /* Кругла іконка */
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 24px; /* Відступ від верхнього краю */
+      right: 24px; /* Відступ від лівого краю */
+    }
+
+    .toggle-icon:hover {
+      background-color: #333;
+    }
+
+    .answer {
+      display: none; /* Ховаємо відповідь за замовчуванням */
+      margin-top: 16px; /* Відступ від питання */
+      width: 100%;
+      text-align: left; /* Відповідь вирівняна зліва */
+
+      .answer-text {
+        color: #333;
+      }
+    }
+
+    &.active {
+      background-color: #91ba78; /* Зелений фон */
+      border-color: #0b1215; /* Темно-зелений контур */
+      height: 137px; /* Висота при відкритті */
+
+      .toggle-icon {
+        background-color: #000; /* Темно-зелений колір іконки */
+      }
+
+      .answer {
+        display: block; /* Відображення відповіді */
+      }
+    }
+  }
+}
