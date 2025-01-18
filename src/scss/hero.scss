@@ -1,0 +1,86 @@
+.banner {
+  display: flex;
+  border-radius: 10px;
+}
+
+.text-content {
+  width: 536px;
+  margin-right: 24px;
+}
+.title-cont {
+  height: 188px;
+}
+.text-content h1 {
+  color: #0b1215;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  margin-bottom: 32px;
+}
+
+.highlight {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 24px;
+  transform: rotate(-4deg);
+  font-family: 'Lilita One', sans-serif;
+  color: #0b1215;
+  background-color: #eeabc4;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  z-index: 1; /* Низький z-index для спану */
+  position: relative; /* Необхідно для роботи z-index */
+}
+
+.text-content p {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 102px;
+  width: 312px;
+  line-height: 1.2;
+}
+
+.google-play-button {
+  display: flex;
+  align-items: center; /* Центруємо значок і текст по вертикалі */
+  border: 1px solid #0b1215;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 312px;
+  height: 91px;
+  background-color: #ffd685;
+  text-decoration: none; /* Прибираємо підкреслення */
+}
+
+.google-play {
+  width: 54px;
+  height: 61px;
+  margin-right: 10px; /* Відступ між значком і текстом */
+}
+
+.google-play-button div {
+  display: flex;
+  flex-direction: column; /* Розташовуємо текст в стовпчик */
+  align-items: flex-start; /* Вирівнюємо текст по лівому краю */
+}
+
+.download-text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.google-play-text {
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 4px; /* Відступ між двома текстами */
+}
+
+.game-image {
+  max-width: 760px; /* Фіксована ширина */
+  height: 500px; /* Фіксована висота */
+}
