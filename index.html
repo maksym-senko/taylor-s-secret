@@ -19,17 +19,21 @@
     <title>Taylor's Secret: Merge Story</title>
     
     <script type="module" crossorigin src="/taylor-s-secret/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/taylor-s-secret/assets/index-957d8a94.css">
+    <link rel="stylesheet" href="/taylor-s-secret/assets/index-a8c1be5f.css">
   </head>
   <body>
     <header class="header container">
   <nav class="nav-container">
     <ul class="nav-menu">
       <li><a class="nav-link" href="#">Home</a></li>
-      <li><a class="nav-link" href="#">Meet Taylor</a></li>
-      <li><a class="nav-link" href="#">About the Game</a></li>
-      <li><a class="nav-link" href="#">How to Play</a></li>
-      <li><a class="nav-link" href="#">Why Choose This Game?</a></li>
+      <li><a class="nav-link" href="#meet-taylor">Meet Taylor</a></li>
+      <li><a class="nav-link" href="#about">About the Game</a></li>
+      <li><a class="nav-link" href="#how-to-play">How to Play</a></li>
+      <li>
+        <a class="nav-link" href="#why-choose-this-game"
+          >Why Choose This Game?</a
+        >
+      </li>
     </ul>
     <img
       class="logo"
@@ -39,11 +43,11 @@
       height="82"
     />
     <ul class="nav-menu">
-      <li><a class="nav-link" href="#">Benefits</a></li>
-      <li><a class="nav-link" href="#">Unique Features</a></li>
-      <li><a class="nav-link" href="#">Gallery</a></li>
-      <li><a class="nav-link" href="#">FAQ</a></li>
-      <li><a class="nav-link" href="#">Reviews</a></li>
+      <li><a class="nav-link" href="#benefits">Benefits</a></li>
+      <li><a class="nav-link" href="#features">Unique Features</a></li>
+      <li><a class="nav-link" href="#gallery">Gallery</a></li>
+      <li><a class="nav-link" href="#faq">FAQ</a></li>
+      <li><a class="nav-link" href="#reviews">Reviews</a></li>
     </ul>
   </nav>
 </header>
@@ -58,7 +62,7 @@
       </h1>
       <p>Unravel secrets, merge to restore, and uncover the truth!</p>
       <a
-        href="https://play.google.com/store/apps/details?id=YOUR_GAME_ID"
+        href="https://play.google.com/store/search?q=taylor%20secret&c=apps"
         class="google-play-button"
         target="_blank"
         rel="noopener noreferrer"
@@ -184,7 +188,45 @@
 
     </main>
 
-    <footer id="footer"></footer>
+    <footer class="container footer">
+  <div class="footer-container">
+    <img
+      class="footer-image"
+      src="../image/Footer.jpg"
+      alt="Taylor's Secret image"
+    />
+    <div class="footer-text-container">
+      <h2 class="footer-title">Help Taylor uncover her secret today!</h2>
+      <a
+        href="https://play.google.com/store/search?q=taylor%20secret&c=apps"
+        class="google-play-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA9CAYAAADmgpoeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARiSURBVHgB1ZvNbxtFGIffmd0lOCaVORQahIT5D6JibkV1oUUgLml6QLnQRNADt5gbCLXxAVWcmhw4cbA5NVzAt6LS4EVEgkOU9IDUVm0Vq4e6jap2pbhxWu/udN9ttlon9ng/Ztbb52CNZ8daP/vObz9GNoE9TFQmc/RVOgkMcvieEvvq6nRNh5cM4jVQSMkoF5yOmR6DGhZj5bXp36rwkuCKTVyczGuE1hmQ/IDBjQ6zjl2drjUg5VB8CSKFMIC8SpSN95ZOVfBgQIqhhy9OzQSR8oPTVaXKeuHXqXOQUihlB05DFPDkwsj8+0unNvDgQMogx85vPnr81vmcPXIHYqKbzJpNS/7Ihz+0GKPb4MiBADnMYdViVnnYgu7Jg9ijkL37LaiPD0NcMH8aUeqFpak5GCJuxfwd7Td+hs7YCohgmNe/fWKISLnne4GaaVulJKdnTzFEuBwkmz/ab0Nm8wxoW0dAJF7+krg89K2Yh4zKuTuWnL+BYogsOUTW9AwkhsiUe/5N2IJp24uiBGnQgTIy1wUjcyLzF1gMkS2HTw+UkAref/576VARYhBKDJFeOYcvR6/nC9qDurmsVNqXIA8RCC2GyJT7avS6I3bDbTNGZlRN3egsq+fCCkYSQ2TI+aW6YDCvaUr96WVlBgISWQwRKddXahd8GCaUVMwrykbrsjYBA4glhqDcyKOTEIdBUn5QcISy9UH5iy2GjDycjCwXRsqPP3+9tgsRQ6LIRZXqwskfTs+9+RMmhoSREyK1i5c/p3oXvD6hYkgQOZFSXTCYw+xhU7gYwpOTJrULZq/zp1pUQRIohzx5/fcXfXPZ/+HzzG2Qje3sSpoY4pf7fmwdPhOwChYESuColKnoB+W+a5iJSe2Sk1ox5OtrP8KR5l1ot8ch80ETEsKQWjGUOtr8w23vrByC9j/jkAQ2g7+lifmlPJKSI4zVpEzFXlIeKIfImpYEWFX72KoKrxhPykNe5VhN2bJK2BJasSBSHmIrxwxmQ+kVp1JejzCxMFIe8eWY4SwCLaota4GcBMO/RYhYFCmP6HKsZnasUuZTaPTaGlssjpRHSDndudktaycsnTcosljWbMEXN3+KLeUxWG5/jnhEEkOps2sleKd1C0TSW65/jniEFpMl5bFHTndyNNsvRzxCicmW8thZeVMnb2+Vx84YOkQksFgSUs5DYsMGVh7/a7UKyxCLQGLSpRgYjLLFbSu78K6uB84Rj4FiCVSqatmKU6X/GiAQrphcKaZbBMrjV1Z1kEBfMVlSXTmSSE8xKVIScsRjn5ikSknJEY8uMfFScnPE44WYSKmkcsTDFRMmlXCOeKgHd5rG2bVvcgd37kFMEs8RD3LrkxP1Ax2jCJEZXo54qNmnxi/O0k4RQpKGHPFwf56++VGh7jSLgT7h5ch8beg54uGePCxLnVWoXXdWGvMDxqcqRzyI/83944V5YtPT+wXTmSMepFdn83ihSBlz/9uybY3paZ5y/XgGnWScrmmy0mMAAAAASUVORK5CYII="
+          alt="Google Play Icon"
+          class="google-play"
+        />
+
+        <div>
+          <span class="download-text">Download Now</span>
+          <span class="google-play-text">Google Play</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-police-container">
+    <p class="footer-text">©2024 WinFusionQuest.com, All Rights Reserved.</p>
+    <div class="police-container">
+      <a href="#" id="privacy-policy" class="footer-btn">Privacy Policy</a>
+      <a href="#" id="terms-conditions" class="footer-btn"
+        >Terms of Conditions</a
+      >
+    </div>
+  </div>
+</footer>
 
 
     
