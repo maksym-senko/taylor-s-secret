@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Хедер завжди зверху */
+  z-index: 1000;
 }
 
 .nav-container {
@@ -11,7 +11,6 @@
   border: 1px solid #0b1215;
   margin-top: 32px;
   margin-bottom: 48px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
