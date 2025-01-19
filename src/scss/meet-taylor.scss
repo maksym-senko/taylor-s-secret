@@ -1,7 +1,10 @@
+#meet-taylor {
+  margin-top: 120px;
+}
+
 .meet-taylor-container {
   display: flex; /* Використовуємо Flexbox для розміщення в рядок */
   gap: 24px; /* Відступ між блоками */
-  margin-top: 120px;
 }
 
 .meet-box {
@@ -50,11 +53,15 @@
 }
 
 @media (max-width: 320px) {
+  #meet-taylor {
+    margin-bottom: 80px;
+    margin-top: 81px;
+  }
+
   .meet-taylor-container {
     display: flex;
     flex-direction: column; /* Вертикальне розташування блоків */
     gap: 16px; /* Менший відступ між блоками */
-    margin-bottom: 80px;
 
     .meet-box {
       display: flex;
