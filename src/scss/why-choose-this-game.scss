@@ -1,0 +1,154 @@
+/* Загальний стиль секції */
+#why-choose-this-game {
+  margin-top: 120px;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Для позиціонування іконок */
+}
+
+.choose-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #0b1215;
+  margin-bottom: 32px;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-left: 1px solid #0b1215;
+}
+
+.column:first-child {
+  border-left: none;
+}
+
+.feature-number {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.column-1 .feature-number {
+  color: #91ba78;
+}
+
+.column-2 .feature-number {
+  color: #9dc4ea;
+}
+
+.column-3 .feature-number {
+  color: #91ba78;
+}
+
+.column-4 .feature-number {
+  color: #eeabc4;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #0b1215;
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #0b1215;
+  line-height: 1.5;
+}
+
+/* Стилі іконок */
+.icony img {
+  position: absolute; /* Абсолютне позиціонування */
+}
+
+/* Зелена іконка (угорі ліворуч) */
+.green {
+  top: -84px; /* Відступ зверху від секції */
+  left: 250px; /* Відступ зліва від ширини секції */
+  width: 75px;
+  height: 75px;
+}
+
+/* Синя іконка (внизу праворуч) */
+.blue {
+  bottom: -120px; /* Відступ знизу від секції */
+  right: 172px; /* Відступ справа від ширини секції */
+  width: 92px;
+  height: 92px;
+}
+
+/* Рожева іконка (по центру праворуч) */
+.pink {
+  top: -40px; /* Вирівнювання по центру секції */
+  left: 314px; /* Відступ справа від ширини секції */
+
+  width: 87px;
+  height: 88px;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 320px) {
+  .columns-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .column {
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .column:first-child {
+    border-top: none;
+  }
+
+  .icony img {
+    position: absolute;
+  }
+
+  /* Зелену іконку центруємо над заголовком */
+  .green {
+    top: -69px;
+    left: 223px;
+    width: 39px;
+    height: 40px;
+  }
+
+  /* Синю іконку переміщуємо донизу */
+  .blue {
+    bottom: -17px;
+    right: 137px;
+    width: 46px;
+    height: 46px;
+  }
+
+  /* Рожеву іконку розташовуємо по центру */
+  .pink {
+    top: -56px;
+    left: 262px;
+    width: 40px;
+    height: 40px;
+  }
+  .choose-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
