@@ -1,0 +1,110 @@
+#reviews {
+  margin-top: 50px;
+  text-align: center; /* Center title */
+}
+
+.review-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #0b1215;
+  margin-bottom: 32px; /* Adds space below the title */
+  width: 100%;
+  max-width: 568px; /* Limit max width for better centering */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap; /* Ensure reviews wrap to next line if needed */
+  justify-content: center; /* Center reviews */
+}
+
+.review-box {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  border-radius: 24px;
+  padding: 40px;
+  width: 648px;
+  height: 186px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding in width and height */
+  text-align: center; /* Center content in the boxes */
+}
+
+.box-1 {
+  background-color: #9dc4ea; /* Light blue */
+}
+
+.box-2 {
+  background-color: white;
+  border: 1px solid #0b1215;
+}
+
+.box-3 {
+  background-color: #91ba78; /* Light green */
+}
+
+.box-4 {
+  background-color: #eeabc4; /* Light pink */
+}
+
+.reviewer-name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Align reviewer name and icon horizontally */
+  align-items: center;
+}
+
+.quote {
+  width: 40px; /* Set a fixed width for the icon */
+  height: auto;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 8px; /* Adds space between review text and reviewer name */
+  text-align: start; /* Center the review text */
+}
+
+/* Mobile Adaptation */
+@media (max-width: 768px) {
+  .review-container {
+    flex-direction: column; /* Stack the reviews in a column on mobile */
+    align-items: center; /* Center the review boxes */
+    gap: 0;
+  }
+
+  .review-box {
+    border-radius: 24px;
+    padding: 24px;
+    width: 288px;
+    height: 140px;
+  }
+
+  .review-text {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+  }
+  .reviewer-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .review-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px; /* Reduce margin for mobile */
+  }
+  .quote {
+    width: 20px;
+  }
+}
