@@ -3,6 +3,11 @@
   flex-direction: row;
   margin-bottom: 48px;
 }
+.footer-image {
+  border-radius: 24px;
+  width: 760px;
+  height: 303px;
+}
 
 .footer-text-container {
   display: flex;
@@ -250,6 +255,13 @@
   .close {
     padding: 12px;
     font-size: 18px;
+  }
+  .footer-image {
+    border-radius: 24px;
+    width: 288px;
+    height: 200px;
+
+    overflow: hidden;
   }
 
   .privacy-policy-title,
