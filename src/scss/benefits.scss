@@ -86,19 +86,19 @@
 }
 
 /* Кольори для кожного квадрата */
-.box-2 {
+.box2 {
   background-color: #eeabc4;
 }
 
-.box-3 {
+.box3 {
   background-color: #9dc4ea;
 }
 
-.box-4 {
+.box4 {
   background-color: #9dc4ea;
 }
 
-.box-5 {
+.box5 {
   border: 1px solid #0b1215;
   border-radius: 24px;
   padding: 40px;
@@ -106,6 +106,68 @@
   height: 204px;
 }
 
-.box-6 {
+.box6 {
   background-color: #91ba78;
+}
+@media (max-width: 320px) {
+  .benefits-container {
+    margin-top: 80px;
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+
+  .upper-row {
+    flex-direction: column; /* Елементи розташовуються вертикально */
+    gap: 16px;
+  }
+
+  .arrow-box {
+    display: none; /* Приховуємо arrow-box */
+  }
+  .title-box {
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 75px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .benefit-box {
+    border-radius: 16px; /* Новий радіус */
+    padding: 24px; /* Новий внутрішній відступ */
+    width: 288px; /* Нова ширина */
+    height: 75px; /* Висота для benefit-box */
+    box-shadow: none; /* Якщо потрібна тінь — залишити */
+  }
+
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 136px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 16px; /* Зменшений відступ між блоками */
+  }
+
+  .benefit-box h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-box p {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
