@@ -1,5 +1,5 @@
 <header class="header container">
-  <nav class="nav-container">
+  <nav class="nav-container" aria-label="Main Navigation">
     <ul class="nav-menu">
       <li><a class="nav-link" href="#">Home</a></li>
       <li><a class="nav-link" href="#meet-taylor">Meet Taylor</a></li>
@@ -11,19 +11,67 @@
         >
       </li>
     </ul>
-    <img
-      class="logo"
-      src="./image/logo.png"
-      alt="Taylor's Secret Logo"
-      width="185"
-      height="82"
-    />
+    <a href="#" class="logo-link" aria-label="Home">
+      <img
+        class="logo"
+        src="./image/logo.png"
+        alt="Taylor's Secret Logo"
+        width="185"
+        height="82"
+      />
+    </a>
     <ul class="nav-menu">
-      <li><a class="nav-link" href="#benefits">Benefits</a></li>
-      <li><a class="nav-link" href="#features">Unique Features</a></li>
-      <li><a class="nav-link" href="#gallery">Gallery</a></li>
-      <li><a class="nav-link" href="#faq">FAQ</a></li>
-      <li><a class="nav-link" href="#reviews">Reviews</a></li>
+      <li><a class="nav-link-menu" href="#benefits">Benefits</a></li>
+      <li><a class="nav-link-menu" href="#features">Unique Features</a></li>
+      <li><a class="nav-link-menu" href="#gallery">Gallery</a></li>
+      <li><a class="nav-link-menu" href="#faq">FAQ</a></li>
+      <li><a class="nav-link-menu" href="#reviews">Reviews</a></li>
     </ul>
+    <button class="open-menu-btn" type="button" aria-label="Open Menu">
+      <img src="./image/Burger.png" alt="Menu Button" />
+    </button>
   </nav>
 </header>
+
+<aside class="burger-menu" aria-hidden="true">
+  <div class="burger-menu-header">
+    <a href="#" class="logo-link" aria-label="Home">
+      <img class="logo" src="./image/logo.png" alt="Taylor's Secret Logo" />
+    </a>
+    <button class="cross-btn" type="button" aria-label="Close Menu">
+      <img src="./image/Cross.png" alt="Close Menu" />
+    </button>
+  </div>
+  <nav aria-label="burger-menu-navigation">
+    <ul class="nav-menu-burger">
+      <li><a class="nav-link-menu" href="#">Home</a></li>
+      <li><a class="nav-link-menu" href="#meet-taylor">Meet Taylor</a></li>
+      <li><a class="nav-link-menu" href="#about">About the Game</a></li>
+      <li><a class="nav-link-menu" href="#benefits">Benefits</a></li>
+      <li><a class="nav-link-menu" href="#features">Unique Features</a></li>
+      <li><a class="nav-link-menu" href="#gallery">Gallery</a></li>
+      <li><a class="nav-link-menu" href="#how-to-play">How to Play</a></li>
+      <li>
+        <a class="nav-link-menu" href="#why-choose-this-game"
+          >Why Choose This Game?</a
+        >
+      </li>
+      <li><a class="nav-link-menu" href="#faq">FAQ</a></li>
+      <li><a class="nav-link-menu" href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+  <div class="burger-menu-private">
+    <ul>
+      <li>
+        <a class="private-menu-link" href="#" id="privacy-policy-btn"
+          >Privacy Policy</a
+        >
+      </li>
+      <li>
+        <a class="private-menu-link" href="#" id="terms-conditions-btn"
+          >Terms of Conditions</a
+        >
+      </li>
+    </ul>
+  </div>
+</aside>
