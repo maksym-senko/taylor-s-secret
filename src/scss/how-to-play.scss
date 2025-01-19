@@ -1,0 +1,163 @@
+@media screen and (min-width: 320px) {
+  .how-to-play-container {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .instructions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 288px;
+  }
+
+  .blue {
+    background-color: #9dc4ea;
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 136px;
+  }
+
+  .white {
+    border: 1px solid #0b1215;
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 136px;
+  }
+
+  .green {
+    background-color: #91ba78;
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 136px;
+  }
+
+  .pink {
+    background-color: #eeabc4;
+    border-radius: 16px;
+    padding: 24px;
+    width: 288px;
+    height: 136px;
+    margin-bottom: 16px;
+  }
+
+  .instruction-box h3 {
+    text-align: start;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0b1215;
+    margin-bottom: 8px;
+  }
+
+  .instruction-box p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: start;
+    line-height: 18px;
+  }
+
+  .how-to-play-image {
+    position: initial;
+  }
+
+  .how-to-play-image img {
+    border-radius: 24px;
+    width: 288px;
+    height: 293px;
+  }
+
+  .how-to-play-highlight {
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+    margin-left: 70px;
+    transform: rotate(-4deg);
+    background-color: #ffd685;
+    border-radius: 16px;
+    width: 146px;
+    height: 43px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .how-to-play-container {
+    margin-bottom: 120px;
+  }
+
+  .instructions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 872px;
+    height: 432px;
+  }
+
+  .blue {
+    background-color: #91ba78;
+    border-radius: 24px;
+    padding: 40px;
+    width: 424px;
+    height: 204px;
+  }
+
+  .white {
+    border-radius: 24px;
+    padding: 40px;
+    width: 424px;
+    height: 204px;
+  }
+
+  .green {
+    background-color: #9dc4ea;
+    border-radius: 24px;
+    padding: 40px;
+    width: 424px;
+    height: 204px;
+  }
+
+  .pink {
+    border-radius: 24px;
+    padding: 40px;
+    width: 424px;
+    height: 204px;
+    margin-bottom: 0;
+  }
+
+  .instruction-box h3 {
+    font-size: 24px;
+  }
+
+  .instruction-box p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .how-to-play-image {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+  }
+
+  .how-to-play-image img {
+    width: 424px;
+    height: 431px;
+  }
+
+  .how-to-play-highlight {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 308px;
+    border-radius: 24px;
+    width: 251px;
+    height: 75px;
+  }
+}
