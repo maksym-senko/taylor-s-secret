@@ -69,3 +69,55 @@
   line-height: 1.5;
   max-width: 648px; /* Фіксована ширина для тексту */
 }
+
+@media (max-width: 320px) {
+  .about-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  /* Іконки */
+  .decoration-icon-blue {
+    top: 242px;
+    left: 66px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .decoration-icon-pink {
+    bottom: -46px;
+    right: 254px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .decoration-icon-green {
+    top: -53px; /* Коригований відступ зверху */
+    right: 16px; /* Зменшений відступ справа */
+    width: 52px; /* Зменшений розмір */
+    height: 53px;
+  }
+
+  .about-title {
+    border-radius: 16px;
+    padding: 8px 12px;
+    width: 186px;
+    height: 43px;
+
+    transform: rotate(-4deg); /* Прибрано нахил для більш зручного читання */
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .about-text {
+    align-items: center; /* Центрування тексту */
+  }
+
+  .about-p {
+    font-size: 16px; /* Зменшений розмір тексту */
+    line-height: 1.3; /* Більша міжрядкова відстань */
+    width: 288px; /* Вужча ширина для тексту */
+  }
+}
