@@ -1,0 +1,101 @@
+/* Загальний стиль для галереї */
+#gallery {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.gallery-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: left;
+  color: #0b1215;
+  margin-bottom: 32px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Два великі фото + одна колонка для малих */
+  width: 1320px;
+  height: 588px;
+  margin: 0 auto;
+  align-items: stretch;
+  gap: 24px;
+}
+
+/* Великі фото */
+.large-photo {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  border-radius: 24px;
+  width: 424px;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Маленькі фото */
+.small-photos {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Вертикальне розташування двох фото */
+  gap: 24px;
+  width: 424px;
+  height: 510px;
+}
+
+.small-photo {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 24px;
+  width: 424px;
+  height: 243px;
+}
+
+/* Стиль для зображень */
+.large-photo img,
+.small-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Адаптивність */
+@media (max-width: 320px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; /* Одноколонковий макет для мобільних */
+    width: 288px;
+    height: 1070px;
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+  .gallery-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .small-photos {
+    grid-template-rows: auto auto;
+    height: auto;
+    gap: 16px;
+  }
+
+  .small-photo {
+    width: 288px;
+    height: 165px;
+  }
+  .large-photo {
+    border-radius: 16px;
+    width: 288px;
+    height: 346px;
+    gap: 0;
+  }
+}
