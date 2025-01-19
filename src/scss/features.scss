@@ -1,0 +1,115 @@
+#features {
+  margin-top: 122px;
+  background-image: url('../image/Rectangle.png'); /* Зображення на фон */
+  width: 1400px;
+  height: 665px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 82px;
+  padding-bottom: 120px;
+}
+
+.unique-features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Відстань між блоками */
+  text-align: center;
+  width: 1320px;
+  background-size: cover;
+}
+
+.features-title {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  align-items: center; /* Горизонтальне вирівнювання елементів */
+  gap: 10px; /* Відстань між елементами */
+  border-bottom: 1px solid #0b1215;
+  padding: 0px 0px 24px 0px;
+  width: 1320px;
+  height: 70px;
+}
+
+.number {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffd685;
+  margin-right: 80px;
+}
+
+.f-title {
+  font-weight: 700;
+  font-size: 24px;
+  width: 212px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 80px; /* Відступ між заголовком і описом */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+/* Медіа-запит для екранів до 320px */
+@media screen and (max-width: 320px) {
+  #features {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 37px;
+    padding-bottom: 56px;
+    background-image: url('../image/bg.png');
+    width: 320px;
+    height: 512px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .features-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .unique-features {
+    gap: 20px;
+    width: 288px;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Цифра і заголовок в одному рядку */
+    justify-content: left;
+    gap: 10px;
+    padding: 0;
+    width: 288px;
+    border-bottom: none;
+  }
+
+  .number {
+    font-size: 24px;
+    margin-right: 10px; /* Відстань між цифрою і заголовком */
+  }
+
+  .f-title {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-left: 0; /* Прибираємо лівий відступ на мобільних */
+    font-weight: 400;
+    width: 288px; /* Займає всю ширину для опису */
+    text-align: left;
+    text-wrap: wrap; /* Вирівнюємо текст по лівому краю */
+    border-bottom: 1px solid #0b1215;
+  }
+}
