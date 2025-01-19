@@ -1,7 +1,6 @@
 @media screen and (min-width: 320px) {
   .how-to-play-container {
     position: relative;
-    margin-bottom: 80px;
   }
 
   .instructions {
@@ -11,7 +10,7 @@
     width: 288px;
   }
 
-  .blue {
+  .instruction-box-blue {
     background-color: #9dc4ea;
     border-radius: 16px;
     padding: 24px;
@@ -19,7 +18,7 @@
     height: 136px;
   }
 
-  .white {
+  .instruction-box-white {
     border: 1px solid #0b1215;
     border-radius: 16px;
     padding: 24px;
@@ -27,7 +26,7 @@
     height: 136px;
   }
 
-  .green {
+  .instruction-box-green {
     background-color: #91ba78;
     border-radius: 16px;
     padding: 24px;
@@ -35,7 +34,7 @@
     height: 136px;
   }
 
-  .pink {
+  .instruction-box-pink {
     background-color: #eeabc4;
     border-radius: 16px;
     padding: 24px;
@@ -44,7 +43,7 @@
     margin-bottom: 16px;
   }
 
-  .instruction-box h3 {
+  .instruction-box-title {
     text-align: start;
     font-weight: 700;
     font-size: 16px;
@@ -52,18 +51,18 @@
     margin-bottom: 8px;
   }
 
-  .instruction-box p {
+  .instruction-box-text {
     font-weight: 400;
     font-size: 16px;
     text-align: start;
     line-height: 18px;
   }
 
-  .how-to-play-image {
+  .how-to-play-image-container {
     position: initial;
   }
 
-  .how-to-play-image img {
+  .how-to-play-image {
     border-radius: 24px;
     width: 288px;
     height: 293px;
@@ -99,7 +98,7 @@
     height: 432px;
   }
 
-  .blue {
+  .instruction-box-blue {
     background-color: #91ba78;
     border-radius: 24px;
     padding: 40px;
@@ -107,14 +106,14 @@
     height: 204px;
   }
 
-  .white {
+  .instruction-box-white {
     border-radius: 24px;
     padding: 40px;
     width: 424px;
     height: 204px;
   }
 
-  .green {
+  .instruction-box-green {
     background-color: #9dc4ea;
     border-radius: 24px;
     padding: 40px;
@@ -122,7 +121,7 @@
     height: 204px;
   }
 
-  .pink {
+  .instruction-box-pink {
     border-radius: 24px;
     padding: 40px;
     width: 424px;
@@ -130,11 +129,11 @@
     margin-bottom: 0;
   }
 
-  .instruction-box h3 {
+  .instruction-box-title {
     font-size: 24px;
   }
 
-  .instruction-box p {
+  .instruction-box-text {
     font-size: 24px;
     line-height: 30px;
   }
@@ -145,7 +144,7 @@
     right: 40px;
   }
 
-  .how-to-play-image img {
+  .how-to-play-image {
     width: 424px;
     height: 431px;
   }
