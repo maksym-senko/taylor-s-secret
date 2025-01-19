@@ -103,7 +103,7 @@
 }
 
 /* Адаптація для мобільних пристроїв */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1399px) {
   .columns-container {
     flex-direction: column;
     gap: 16px;

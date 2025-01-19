@@ -112,7 +112,7 @@
 .box6 {
   background-color: #91ba78;
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1399px) {
   #benefits {
     margin-bottom: 80px;
     margin-top: 80px;

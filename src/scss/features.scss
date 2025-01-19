@@ -8,6 +8,10 @@
   padding-top: 82px;
   padding-bottom: 120px;
 }
+.features-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 .unique-features {
   display: flex;
@@ -56,8 +60,13 @@
   text-align: left; /* Вирівнювання тексту по лівому краю */
 }
 
-/* Медіа-запит для екранів до 320px */
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 1399px) {
+  .features-container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
   #features {
     padding-left: 16px;
     padding-right: 16px;
