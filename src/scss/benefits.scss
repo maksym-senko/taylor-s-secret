@@ -1,8 +1,11 @@
+#benefits {
+  margin-top: 120px;
+}
+
 .benefits-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 120px;
 }
 
 .upper-row {
@@ -110,10 +113,13 @@
   background-color: #91ba78;
 }
 @media (max-width: 320px) {
-  .benefits-container {
-    margin-top: 80px;
-    gap: 16px;
+  #benefits {
     margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .benefits-container {
+    gap: 16px;
   }
 
   .upper-row {

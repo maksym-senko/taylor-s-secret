@@ -75,6 +75,12 @@
 
 /* Mobile Adaptation */
 @media (max-width: 768px) {
+  #reviews {
+    margin-top: 80px;
+
+    margin-bottom: 80px;
+  }
+
   .review-container {
     flex-direction: column; /* Stack the reviews in a column on mobile */
     align-items: center; /* Center the review boxes */
