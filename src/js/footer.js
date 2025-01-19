@@ -1,60 +1,37 @@
-// Вибір елементів для модальних вікон
-const privacyPolicyModal = document.getElementById('privacy-policy-modal');
+// Get elements
 const privacyPolicyBtn = document.getElementById('privacy-policy-btn');
-const closePrivacyPolicyBtn = document.getElementById('close-privacy-policy');
-
-const termsConditionsModal = document.getElementById('terms-conditions-modal');
 const termsConditionsBtn = document.getElementById('terms-conditions-btn');
-const closeTermsConditionsBtn = document.getElementById(
-  'close-terms-conditions'
-);
+const privacyPolicyModal = document.getElementById('privacy-policy-modal');
+const termsConditionsModal = document.getElementById('terms-conditions-modal');
+const closePrivacyPolicy = document.getElementById('close-privacy-policy');
+const closeTermsConditions = document.getElementById('close-terms-conditions');
 
-// Функція для відкриття модального вікна
-function openModal(modal) {
-  modal.style.display = 'block';
-}
+// Open modal for Privacy Policy
+privacyPolicyBtn.addEventListener('click', e => {
+  e.preventDefault();
+  privacyPolicyModal.style.display = 'block';
+});
 
-// Функція для закриття модального вікна
-function closeModal(modal) {
-  modal.style.display = 'none';
-}
+// Open modal for Terms and Conditions
+termsConditionsBtn.addEventListener('click', e => {
+  e.preventDefault();
+  termsConditionsModal.style.display = 'block';
+});
 
-// Додавання подій для відкриття та закриття модальних вікон
-function addModalEventListeners(btn, modal, closeBtn) {
-  btn.addEventListener('click', () => {
-    openModal(modal);
-  });
+// Close modals
+closePrivacyPolicy.addEventListener('click', () => {
+  privacyPolicyModal.style.display = 'none';
+});
 
-  closeBtn.addEventListener('click', () => {
-    closeModal(modal);
-  });
+closeTermsConditions.addEventListener('click', () => {
+  termsConditionsModal.style.display = 'none';
+});
 
-  window.addEventListener('click', event => {
-    if (event.target === modal) {
-      closeModal(modal);
-    }
-  });
-}
-
-// Використовуємо функцію для обох модальних вікон
-addModalEventListeners(
-  privacyPolicyBtn,
-  privacyPolicyModal,
-  closePrivacyPolicyBtn
-);
-addModalEventListeners(
-  termsConditionsBtn,
-  termsConditionsModal,
-  closeTermsConditionsBtn
-);
-
-// Функція для перевірки слухачів подій
-function checkEventListeners(elem) {
-  const clone = elem.cloneNode(true);
-  const hasListeners = clone.outerHTML !== elem.outerHTML;
-  console.log(`Element ${elem.id} has event listeners:`, hasListeners);
-}
-
-// Використання для перевірки
-checkEventListeners(privacyPolicyBtn);
-checkEventListeners(termsConditionsBtn);
+// Close modals when clicking outside the modal content
+window.addEventListener('click', e => {
+  if (e.target === privacyPolicyModal) {
+    privacyPolicyModal.style.display = 'none';
+  } else if (e.target === termsConditionsModal) {
+    termsConditionsModal.style.display = 'none';
+  }
+});

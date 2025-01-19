@@ -227,3 +227,45 @@
   font-size: 24px;
   margin-bottom: 80px;
 }
+
+/* Very small screens (portrait phones) */
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .footer-btn {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .close {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .privacy-policy-title,
+  .terms-conditions-title {
+    font-size: 24px;
+  }
+
+  .privacy-policy-intro,
+  .policy-section,
+  .police-text,
+  .terms-conditions-text {
+    font-size: 18px;
+  }
+
+  .police-link {
+    font-size: 18px;
+    margin-left: 12px;
+  }
+}
