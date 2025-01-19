@@ -48,3 +48,57 @@
   line-height: 1.2;
   width: 648px;
 }
+
+@media (max-width: 320px) {
+  .meet-taylor-container {
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування блоків */
+    gap: 16px; /* Менший відступ між блоками */
+    margin-bottom: 80px;
+
+    .meet-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #91ba78;
+      border-radius: 16px;
+      width: 288px;
+      height: 183px;
+
+      position: relative;
+    }
+
+    .about-image {
+      width: 162px;
+      height: 183px;
+      object-fit: cover;
+      margin-left: 98px;
+      border-radius: 8px;
+    }
+
+    .meet-title {
+      font-size: 24px;
+      top: 16px;
+      left: 16px;
+      width: auto;
+      white-space: normal;
+      line-height: 1.2;
+    }
+
+    .meet-text {
+      border-radius: 16px;
+      padding: 24px;
+      width: 288px;
+      height: 348px;
+      background-color: #9dc4ea;
+    }
+
+    .meet-text p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      width: 240px;
+    }
+  }
+}
