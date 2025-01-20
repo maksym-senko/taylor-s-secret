@@ -1,43 +1,23 @@
-// Прокрутка хедера
-const header = document.querySelector('.header');
-function checkScroll() {
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-}
-window.addEventListener('scroll', checkScroll);
+document.addEventListener('DOMContentLoaded', function () {
+  const headerHeight = document.querySelector('.header').offsetHeight;
 
-// Мобільне меню
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggleButton = document.querySelector('.burger-menu');
-  const menu = document.querySelector('.mobile-menu');
+  // Додаємо відступ при кліку на якірне посилання
+  document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-  // Функція для перемикання меню
-  const toggleMenu = () => {
-    menu.classList.toggle('active'); // Додаємо/видаляємо клас для показу меню
-  };
+      const targetId = this.getAttribute('href').slice(1);
+      const targetElement = document.getElementById(targetId);
 
-  // Встановлюємо слухач подій на кнопку бургер-меню
-  menuToggleButton.addEventListener('click', toggleMenu);
+      if (targetElement) {
+        const targetPosition =
+          targetElement.getBoundingClientRect().top + window.scrollY;
 
-  // Закриття меню при натисканні на посилання
-  const menuLinks = document.querySelectorAll('.nav-link');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('active');
+        window.scrollTo({
+          top: targetPosition - headerHeight, // Відступ на висоту хедера
+          behavior: 'smooth',
+        });
+      }
     });
-  });
-
-  // Закриття меню при кліку поза ним
-  document.addEventListener('click', event => {
-    if (
-      menu.classList.contains('active') &&
-      !menu.contains(event.target) &&
-      !menuToggleButton.contains(event.target)
-    ) {
-      menu.classList.remove('active');
-    }
   });
 });
