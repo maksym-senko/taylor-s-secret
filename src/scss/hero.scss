@@ -83,7 +83,7 @@
   height: 500px; /* Фіксована висота */
 }
 
-@media (min-width: 320px) and (max-width: 1399px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   .banner {
     display: flex;
     flex-direction: column-reverse; /* Змінюємо порядок елементів */

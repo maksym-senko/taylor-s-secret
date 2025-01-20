@@ -4,6 +4,7 @@
   padding: 20px;
   text-align: center;
   position: relative; /* Для позиціонування іконок */
+  margin-bottom: 120px;
 }
 
 .choose-title {
@@ -103,15 +104,22 @@
 }
 
 /* Адаптація для мобільних пристроїв */
-@media (min-width: 320px) and (max-width: 1399px) {
+@media (min-width: 320px) and (max-width: 1200px) {
+  #why-choose-this-game {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
   .columns-container {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
   }
 
   .column {
+    padding: 0px 0px 12px 0px;
+    width: 288px;
+    height: 123px;
     border-left: none;
-    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
 
   .column:first-child {
@@ -132,7 +140,7 @@
 
   /* Синю іконку переміщуємо донизу */
   .blue {
-    bottom: -17px;
+    bottom: -32px;
     right: 137px;
     width: 46px;
     height: 46px;
@@ -150,5 +158,21 @@
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .feature-text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .feature-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .feature-number {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
   }
 }

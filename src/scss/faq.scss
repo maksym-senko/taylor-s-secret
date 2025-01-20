@@ -1,6 +1,5 @@
 #faq {
   text-align: center;
-  margin-top: 120px;
 
   .faq-title {
     font-weight: 400;
@@ -94,7 +93,7 @@
   }
 
   /* Медіа-запит для адаптації під мобільні екрани */
-  @media (min-width: 320px) and (max-width: 1399px) {
+  @media (min-width: 320px) and (max-width: 1200px) {
     .faq-title {
       font-weight: 400;
       font-size: 24px;
