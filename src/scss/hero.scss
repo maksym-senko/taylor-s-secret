@@ -66,6 +66,13 @@
   flex-direction: column; /* Розташовуємо текст в стовпчик */
   align-items: flex-start; /* Вирівнюємо текст по лівому краю */
 }
+.google-play-button:hover,
+.google-play-button:focus {
+  background-color: #ffc656;
+}
+.google-play-button:disabled {
+  background-color: #d7d7d7;
+}
 
 .download-text {
   font-weight: 400;
