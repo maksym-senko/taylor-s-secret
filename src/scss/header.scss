@@ -32,6 +32,7 @@
 
   .logo {
     width: 90.09px;
+    cursor: pointer;
   }
 
   .open-menu-btn {
@@ -50,12 +51,6 @@
     z-index: 1000;
   }
 
-  //
-  body.expanded {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
   .header.expanded {
     width: 288px;
     background-color: #fff8eb;
@@ -72,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     overflow-y: auto;
+    background-color: #fff8eb;
   }
 
   .menu-toggle {
@@ -98,6 +94,7 @@
     padding: 0 16px;
     margin-top: 32px;
     font-weight: 500;
+    background-color: #fff8eb;
   }
 
   .police-mobile {
@@ -128,7 +125,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .nav-container {
     width: 1320px;
     margin-top: 32px;
