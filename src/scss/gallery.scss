@@ -65,6 +65,17 @@
   display: block;
 }
 
+.small-photo,
+.large-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавний перехід для збільшення і тіні */
+}
+
+.small-photo:hover,
+.large-photo:hover {
+  transform: scale(1.1); /* Легке збільшення при наведенні */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Додатковий ефект тіні */
+}
+
 /* Адаптивність */
 @media (min-width: 320px) and (max-width: 1200px) {
   #gallery {

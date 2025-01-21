@@ -36,6 +36,13 @@
   z-index: 0; /* Під текстом */
 }
 
+.decoration-icon-green:hover,
+.decoration-icon-pink:hover,
+.decoration-icon-blue:hover {
+  transform: scale(1.2); /* Збільшення іконки при наведенні */
+  transition: transform 0.3s ease; /* Анімація збільшення */
+}
+
 .about-title {
   display: inline-flex;
   justify-content: center;

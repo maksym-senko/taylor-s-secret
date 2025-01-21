@@ -20,6 +20,11 @@
     list-style: none;
   }
 
+  .question-box:hover,
+  .question-box:focus {
+    background-color: #91ba78;
+  }
+
   .question-box {
     background-color: transparent;
     border: 1px solid #0b1215;

@@ -76,6 +76,13 @@
 /* Стилі іконок */
 .icony img {
   position: absolute; /* Абсолютне позиціонування */
+  transition: transform 0.3s ease; /* Анімація збільшення */
+}
+
+.green:hover,
+.pink:hover,
+.blue:hover {
+  transform: scale(1.2); /* Збільшення іконки при наведенні */
 }
 
 /* Зелена іконка (угорі ліворуч) */
