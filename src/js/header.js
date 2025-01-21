@@ -1,23 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const headerHeight = document.querySelector('.header').offsetHeight;
+const header = document.querySelector('.header');
+const navigation = document.querySelector('.nav-container');
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.nav-menu-mobile');
+const mobilePolice = document.querySelector('.police-mobile');
 
-  // Додаємо відступ при кліку на якірне посилання
-  document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+menuToggle.addEventListener('click', () => {
+  header.classList.toggle('expanded');
+  navigation.classList.toggle('expanded');
+  mobileMenu.classList.toggle('expanded');
+  mobilePolice.classList.toggle('expanded');
+});
 
-      const targetId = this.getAttribute('href').slice(1);
-      const targetElement = document.getElementById(targetId);
+const menuIcon = document.querySelector('.menu-icon');
 
-      if (targetElement) {
-        const targetPosition =
-          targetElement.getBoundingClientRect().top + window.scrollY;
+menuToggle.addEventListener('click', () => {
+  if (menuIcon.src.includes('cross-menu.png')) {
+    menuIcon.src = './image/menu-open.png';
+  } else {
+    menuIcon.src = './image/cross-menu.png';
+  }
+});
 
-        window.scrollTo({
-          top: targetPosition - headerHeight, // Відступ на висоту хедера
-          behavior: 'smooth',
-        });
-      }
-    });
-  });
+menuToggle.addEventListener('click', () => {
+  document.body.classList.toggle('expanded');
+  mobileMenu.classList.toggle('active');
 });
