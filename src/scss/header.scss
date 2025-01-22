@@ -135,6 +135,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+    border: 1px solid #0b1215;
+    border-radius: 24px;
+    background-color: #fff8eb;
   }
 
   .nav-menu {
@@ -176,5 +179,10 @@
 
   .menu-toggle {
     display: none;
+  }
+  .header {
+    position: sticky;
+    top: 0; /* Прикріплюється до верхньої частини вікна */
+    z-index: 1000; /* Щоб не перекривався іншим контентом */
   }
 }
