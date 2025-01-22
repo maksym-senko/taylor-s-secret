@@ -14,8 +14,6 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle('expanded');
   mobilePolice.classList.toggle('expanded');
   menuToggle.classList.toggle('expanded');
-
-
 };
 
 // Функція для закриття меню
@@ -25,9 +23,6 @@ const closeMenu = () => {
   mobileMenu.classList.remove('expanded');
   mobilePolice.classList.remove('expanded');
   menuToggle.classList.remove('expanded');
-
-  // Скидання іконки меню
-  menuIcon.src = './image/menu-open.png';
 };
 
 // Додавання слухача події на кнопку меню
