@@ -1,86 +1,194 @@
-.police-container {
+.info-content {
+  margin: 16px;
+  border-radius: 16px;
+  padding: 12px 16px;
   width: 288px;
+  height: 48px;
+  background-color: #ffd685;
+}
+
+.info-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .icon-arrow-small {
   margin-right: 16px;
 }
 
-.container {
-  padding-right: 22px;
+.info-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-.privacy-policy-title {
+.privacy-info-container {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.privacy-info-title {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 32px;
-}
-
-.privacy-policy-intro {
-  font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
-}
-
-.policy-section {
-  width: 1320px;
-}
-
-.section-title {
-  margin-top: 32px;
   margin-bottom: 16px;
 }
 
-.police-text {
-  width: 1320px;
+.privacy-info-intro {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  text-wrap: wrap;
-  margin-bottom: 32px;
+  font-size: 16px;
+  width: 288px;
+  margin-bottom: 16px;
 }
 
-.police-item-text {
+.privacy-info-section {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-section-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.privacy-text {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
+}
+
+.space {
+  margin-bottom: 16px;
+}
+
+.privacy-item-text {
+  list-style: inside;
+  padding-left: 25px;
 }
 
 .info-list {
-  width: 1320px;
-  list-style: disc;
-  padding-left: 40px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
-.police-link {
+.privacy-text-info {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
+}
+
+.third-party-links {
+  margin-bottom: 16px;
+}
+
+.privacy-link {
   list-style: disc;
+  margin-left: 25px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4285f4;
-  margin-left: 32px;
 }
 
-.police-link::marker {
-  color: #0b1215;
+.privacy-link-black {
+  list-style: disc;
+  margin-left: 25px;
 }
 
-.third-party {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 10px;
+.privacy-info-section-contact {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 60px;
 }
 
-.opt-text {
-  font-weight: 400;
-  font-size: 24px;
+.policy-container-footer {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
-.children-text {
-  font-size: 24px;
-  margin-bottom: 32px;
+.policy-container-footer-text {
+  text-align: center;
 }
 
-.contact-us-section {
-  margin-bottom: 80px;
+.policy-container-footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .info-content {
+    margin: 32px 22px 48px 40px;
+    border-radius: 16px;
+    padding: 24px;
+    width: 1320px;
+    height: 77px;
+    background-color: #ffd685;
+  }
+
+  .info-text {
+    font-size: 24px;
+  }
+
+  .privacy-info-container {
+    padding: 0 22px 0 40px;
+  }
+
+  .privacy-info-section {
+    width: 1320px;
+  }
+
+  .privacy-info-title {
+    margin-bottom: 32px;
+  }
+
+  .privacy-info-intro {
+    font-size: 24px;
+    width: 1320px;
+    margin-bottom: 32px;
+  }
+
+  .info-section-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .privacy-text {
+    font-size: 24px;
+    width: 1320px;
+  }
+
+  .privacy-item-text {
+    font-size: 24px;
+  }
+
+  .privacy-text-info {
+    font-size: 24px;
+  }
+
+  .third-party-links {
+    font-size: 24px;
+  }
+
+  .privacy-link-black {
+    font-size: 24px;
+  }
+
+  .privacy-info-section-contact {
+    width: 1320px;
+    margin-bottom: 80px;
+  }
+
+  .policy-container-footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 1320px;
+    font-size: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
 }
