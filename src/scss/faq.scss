@@ -48,10 +48,6 @@
     align-items: flex-start;
     justify-content: center;
 
-    .question-box.active .toggle-icon .icon {
-      content: url('minus.png'); /* Змінюємо іконку на мінус */
-    }
-
     .answer {
       display: none;
       margin-top: 16px;
@@ -69,8 +65,7 @@
       height: 144px;
 
       .toggle-icon {
-        background-image: url('minus.png'); /* Іконка мінуса при відкритті */
-        transform: translateY(-100%);
+        transform: translateY(-110%);
       }
 
       .answer {
@@ -138,18 +133,10 @@
   transition: background-color 0.3s ease;
 }
 
-.toggle-icon:hover .icon {
-  content: url('hover.png'); /* Змінюємо PNG при ховері */
-}
-
 .icon {
   width: 48px;
   height: 48px;
   transition: transform 0.3s ease;
-}
-
-.question-box.active .icon {
-  content: url('minus.png'); /* Іконка мінуса при активному елементі */
 }
 
 .toggle-icon {
@@ -163,17 +150,4 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-image: url('plus.png'); /* Початкове зображення */
-  background-size: cover;
-  background-position: center;
-}
-
-.toggle-icon:hover .icon,
-.toggle-icon:focus .icon {
-  content: url('./image/hover.png'); /* зміна іконки на ховері та фокусі */
-
-  .question-box.active .toggle-icon {
-    background-image: url('minus.png'); /* Іконка мінуса при активному елементі */
-  }
 }
