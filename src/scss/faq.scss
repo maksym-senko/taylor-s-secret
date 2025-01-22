@@ -26,7 +26,7 @@
   }
 
   .question {
-    font-size: 24px; /* Зменшуємо розмір шрифта для мобільних */
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
   }
@@ -36,45 +36,25 @@
     border: 1px solid #0b1215;
     border-radius: 24px;
     padding: 24px;
-    width: 100%; /* Задаємо ширину на 100% для адаптивності */
-    max-width: 1320px; /* Максимальна ширина для великих екранів */
-    height: 96px; /* Висота до відкриття */
+    width: 100%;
+    max-width: 1320px;
+    height: 96px;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease,
       height 0.3s ease;
-    position: relative; /* Додаємо для коректного позиціонування іконки */
+    position: relative;
     display: flex;
-    flex-direction: column; /* Вертикальне розташування */
-    align-items: flex-start; /* Відповідь ліворуч */
-    justify-content: center; /* Вертикальне вирівнювання питання */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
-    .toggle-icon {
-      background-color: #000;
-      color: #fff;
-      border-radius: 50%; /* Кругла іконка */
-      width: 40px; /* Зменшуємо розмір іконки */
-      height: 40px; /* Зменшуємо розмір іконки */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px; /* Зменшуємо шрифт в іконці */
-      transition: background-color 0.3s;
-      position: absolute;
-      width: 48px;
-      height: 48px;
-      font-size: 30px;
-      top: 50%;
-      right: 16px;
-      transform: translateY(-50%);
-    }
-
-    .toggle-icon:hover {
-      background-color: #333;
+    .question-box.active .toggle-icon .icon {
+      content: url('minus.png'); /* Змінюємо іконку на мінус */
     }
 
     .answer {
-      display: none; /* Ховаємо відповідь за замовчуванням */
-      margin-top: 16px; /* Відступ від питання */
+      display: none;
+      margin-top: 16px;
       width: 100%;
       text-align: left;
 
@@ -84,16 +64,13 @@
     }
 
     &.active {
-      background-color: #91ba78; /* Зелений фон */
-      border-color: #0b1215; /* Темно-зелений контур */
+      background-color: #91ba78;
+      border-color: #0b1215;
       height: 144px;
 
       .toggle-icon {
-        top: 28%;
-        width: 48px;
-        height: 48px;
-        font-size: 30px;
-        background-color: #0b1215;
+        background-image: url('minus.png'); /* Іконка мінуса при відкритті */
+        transform: translateY(-100%);
       }
 
       .answer {
@@ -106,16 +83,15 @@
     .faq-title {
       font-weight: 400;
       font-size: 24px;
-      text-align: center;
       margin-bottom: 20px;
     }
 
     .accordion {
-      gap: 12px; /* Зменшуємо відстань між елементами */
+      gap: 12px;
     }
+
     .question {
-      font-size: 16px; /* Зменшуємо шрифт питання */
-      align-items: flex-start;
+      font-size: 16px;
       text-align: left;
       width: 184px;
       line-height: 1.1;
@@ -130,7 +106,6 @@
     .toggle-icon {
       width: 48px;
       height: 48px;
-      font-size: 24px;
       right: 12px;
     }
 
@@ -146,6 +121,59 @@
     .question-box.active {
       height: 144px;
     }
-    
+  }
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-icon:hover .icon {
+  content: url('hover.png'); /* Змінюємо PNG при ховері */
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.question-box.active .icon {
+  content: url('minus.png'); /* Іконка мінуса при активному елементі */
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: url('plus.png'); /* Початкове зображення */
+  background-size: cover;
+  background-position: center;
+}
+
+.toggle-icon:hover .icon,
+.toggle-icon:focus .icon {
+  content: url('./image/hover.png'); /* зміна іконки на ховері та фокусі */
+
+  .question-box.active .toggle-icon {
+    background-image: url('minus.png'); /* Іконка мінуса при активному елементі */
   }
 }
