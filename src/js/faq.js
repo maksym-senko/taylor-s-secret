@@ -1,27 +1,32 @@
+import iconHover from '../image/hover.png';
+import iconPlus from '../image/plus.png';
+import iconFocus from '../image/focus.png';
+import iconMinus from '../image/minus.png';
+
 document.querySelectorAll('.question-box').forEach(box => {
   const icon = box.querySelector('.icon');
 
   // Ховер на .question-box
   box.addEventListener('mouseenter', () => {
     if (icon) {
-      icon.src = '/image/hover.png'; // Зміна іконки при ховері
+      icon.src = iconHover; // Зміна іконки при ховері
     }
   });
   box.addEventListener('mouseleave', () => {
     if (!box.classList.contains('active') && icon) {
-      icon.src = '/image/plus.png'; // Повернення до початкової іконки
+      icon.src = iconPlus; // Повернення до початкової іконки
     }
   });
 
   // Фокус на .question-box (якщо він може отримати фокус)
   box.addEventListener('focus', () => {
     if (icon) {
-      icon.src = '/image/focus.png'; // Зміна іконки при фокусі
+      icon.src = iconFocus; // Зміна іконки при фокусі
     }
   });
   box.addEventListener('blur', () => {
     if (!box.classList.contains('active') && icon) {
-      icon.src = '/image/plus.png'; // Повернення до початкової іконки
+      icon.src = iconPlus; // Повернення до початкової іконки
     }
   });
 
@@ -34,7 +39,7 @@ document.querySelectorAll('.question-box').forEach(box => {
       b.classList.remove('active');
       const icon = b.querySelector('.icon');
       if (icon) {
-        icon.src = '/image/plus.png'; // Повертаємо плюс для всіх
+        icon.src = iconPlus; // Повертаємо плюс для всіх
       }
     });
 
@@ -43,7 +48,7 @@ document.querySelectorAll('.question-box').forEach(box => {
       box.classList.add('active');
       const icon = box.querySelector('.icon');
       if (icon) {
-        icon.src = '/image/minus.png'; // Мінус для активного
+        icon.src = iconMinus; // Мінус для активного
       }
     }
   });

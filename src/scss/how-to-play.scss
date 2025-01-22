@@ -55,7 +55,7 @@
     font-weight: 400;
     font-size: 16px;
     text-align: start;
-    line-height: 20px
+    line-height: 20px;
   }
 
   .how-to-play-image-container {
@@ -141,16 +141,17 @@
 
   .instruction-box-text {
     font-size: 20px;
-    line-height: 29px
+    line-height: 29px;
   }
 
   .how-to-play-image {
+    border-radius: 24px;
     width: 357px;
     height: 432px;
   }
 
   .how-to-play-highlight {
-    font-family: "Lilita One", sans-serif;
+    font-family: 'Lilita One', sans-serif;
     position: absolute;
     font-size: 39px;
     margin-left: 239px;
