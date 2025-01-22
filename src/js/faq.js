@@ -1,21 +1,47 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const questionBoxes = document.querySelectorAll('.question-box');
+document.querySelectorAll('.question-box').forEach(box => {
+  const icon = box.querySelector('.icon');
 
-  questionBoxes.forEach(box => {
-    box.addEventListener('click', function () {
-      const isActive = this.classList.contains('active');
+  // Ховер на .question-box
+  box.addEventListener('mouseenter', () => {
+    if (icon) {
+      icon.src = './image/hover.png'; // Зміна іконки при ховері
+    }
+  });
+  box.addEventListener('mouseleave', () => {
+    if (!box.classList.contains('active') && icon) {
+      icon.src = './image/plus.png'; // Повернення до початкової іконки
+    }
+  });
 
-      // Закриваємо всі інші питання
-      questionBoxes.forEach(item => {
-        item.classList.remove('active');
-        item.querySelector('.toggle-icon').textContent = '+';
-      });
+  // Фокус на .question-box (якщо він може отримати фокус)
+  box.addEventListener('focus', () => {
+    if (icon) {
+      icon.src = './image/focus.png'; // Зміна іконки на ховері/фокусі
+    }
+  });
+  box.addEventListener('blur', () => {
+    if (!box.classList.contains('active') && icon) {
+      icon.src = './image/plus.png'; // Повернення до початкової іконки
+    }
+  });
 
-      // Якщо питання неактивне, відкриваємо його
-      if (!isActive) {
-        this.classList.add('active');
-        this.querySelector('.toggle-icon').textContent = '-';
+  box.addEventListener('click', () => {
+    const isActive = box.classList.contains('active');
+
+    document.querySelectorAll('.question-box').forEach(b => {
+      b.classList.remove('active');
+      const icon = b.querySelector('.icon');
+      if (icon) {
+        icon.src = './image/plus.png'; // Повертаємо плюс для всіх
       }
     });
+
+    if (!isActive) {
+      box.classList.add('active');
+      const icon = box.querySelector('.icon');
+      if (icon) {
+        icon.src = './image/minus.png'; // Мінус для активного
+      }
+    }
   });
 });
