@@ -5,6 +5,7 @@
   width: 288px;
   height: 48px;
   background-color: #ffd685;
+  width: 288px;
 }
 
 .info-link {
@@ -33,6 +34,7 @@
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 16px;
+  width: 288px;
 }
 
 .privacy-info-intro {
@@ -45,21 +47,25 @@
 
 .privacy-info-section {
   font-family: 'Montserrat', sans-serif;
+  width: 288px;
 }
 
 .info-section-title {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 8px;
+  width: 288px;
 }
 
 .privacy-text {
   font-weight: 400;
   font-size: 16px;
+  width: 288px;
 }
 
 .space {
   margin-bottom: 16px;
+  width: 288px;
 }
 
 .privacy-item-text {
@@ -74,6 +80,7 @@
 .privacy-text-info {
   font-weight: 400;
   font-size: 16px;
+  width: 288px;
 }
 
 .third-party-links {
@@ -96,6 +103,7 @@
 .privacy-info-section-contact {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 60px;
+  width: 288px;
 }
 
 .policy-container-footer {
@@ -105,6 +113,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
+  width: 288px;
 }
 
 .policy-container-footer-text {
@@ -124,7 +133,7 @@
     margin: 32px 22px 48px 40px;
     border-radius: 16px;
     padding: 24px;
-    width: 1320px;
+    width: 1120px;
     height: 77px;
     background-color: #ffd685;
   }
@@ -138,7 +147,7 @@
   }
 
   .privacy-info-section {
-    width: 1320px;
+    width: 1120px;
   }
 
   .privacy-info-title {
@@ -147,7 +156,7 @@
 
   .privacy-info-intro {
     font-size: 24px;
-    width: 1320px;
+    width: 1120px;
     margin-bottom: 32px;
   }
 
@@ -158,7 +167,7 @@
 
   .privacy-text {
     font-size: 24px;
-    width: 1320px;
+    width: 1120px;
   }
 
   .privacy-item-text {
@@ -178,17 +187,23 @@
   }
 
   .privacy-info-section-contact {
-    width: 1320px;
+    width: 1120px;
     margin-bottom: 80px;
   }
 
   .policy-container-footer {
     font-family: 'Montserrat', sans-serif;
-    width: 1320px;
+    width: 1120px;
+    height: 29px;
     font-size: 24px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
     gap: 32px;
     margin-bottom: 32px;
+  }
+  
+  .privacy-text-info {
+    width: 1120px;
   }
 }

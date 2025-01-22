@@ -6,41 +6,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Контейнер для абсолютного позиціонування іконок */
+  position: relative;
 }
-/* Іконки */
+
 .decoration-icon-blue {
   position: absolute;
-  top: 80px; /* Відступ зверху від краю контейнера */
-  left: 145px; /* Відступ зліва від краю контейнера */
+  top: 80px;
+  left: 145px;
   width: 92px;
   height: 92px;
-  z-index: 0; /* Під текстом */
+  z-index: 0;
 }
 
 .decoration-icon-pink {
   position: absolute;
-  bottom: -12px; /* Відступ зверху від краю контейнера */
-  right: 159px; /* Відступ справа від краю контейнера */
+  bottom: -12px;
+  right: 159px;
   width: 126px;
   height: 127px;
-  z-index: 0; /* Під текстом */
+  z-index: 0;
 }
 
 .decoration-icon-green {
   position: absolute;
-  top: -33px; /* Відступ зверху від краю контейнера */
-  right: 81px; /* Відступ справа від краю контейнера */
+  top: -33px;
+  right: 81px;
   width: 93px;
   height: 94px;
-  z-index: 0; /* Під текстом */
+  z-index: 0;
 }
 
 .decoration-icon-green:hover,
 .decoration-icon-pink:hover,
 .decoration-icon-blue:hover {
-  transform: scale(1.2); /* Збільшення іконки при наведенні */
-  transition: transform 0.3s ease; /* Анімація збільшення */
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .about-title {
@@ -59,9 +59,9 @@
   word-wrap: break-word;
   line-height: 1.2;
 
-  margin-left: 336px; /* Більший відступ зліва */
+  margin-left: 336px;
   position: relative;
-  z-index: 1; /* Заголовок над іконками */
+  z-index: 1;
   font-weight: 400;
   font-size: 40px;
 }
@@ -74,18 +74,19 @@
 
 .about-p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   line-height: 1.5;
-  max-width: 648px; /* Фіксована ширина для тексту */
+  max-width: 648px;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   #about {
+    width: 288px;
     margin-top: 80px;
+    margin: 0 auto;
   }
 
-  /* Іконки */
   .decoration-icon-blue {
     top: 242px;
     left: 66px;
@@ -101,9 +102,9 @@
   }
 
   .decoration-icon-green {
-    top: -53px; /* Коригований відступ зверху */
-    right: 16px; /* Зменшений відступ справа */
-    width: 52px; /* Зменшений розмір */
+    top: -53px;
+    right: 16px;
+    width: 52px;
     height: 53px;
   }
 
@@ -113,7 +114,7 @@
     width: 186px;
     height: 43px;
 
-    transform: rotate(-4deg); /* Прибрано нахил для більш зручного читання */
+    transform: rotate(4deg);
     line-height: 1.2;
     margin: 0;
     font-weight: 400;
@@ -121,12 +122,12 @@
   }
 
   .about-text {
-    align-items: center; /* Центрування тексту */
+    align-items: center;
   }
 
   .about-p {
-    font-size: 16px; /* Зменшений розмір тексту */
-    line-height: 1.3; /* Більша міжрядкова відстань */
-    width: 288px; /* Вужча ширина для тексту */
+    font-size: 16px; 
+    line-height: 1.3; 
+    width: 288px;
   }
 }
