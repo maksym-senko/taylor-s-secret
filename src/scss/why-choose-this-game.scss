@@ -1,9 +1,6 @@
-/* Загальний стиль секції */
 #why-choose-this-game {
   margin-top: 120px;
-  padding: 20px;
-  text-align: center;
-  position: relative; /* Для позиціонування іконок */
+  position: relative; 
   margin-bottom: 120px;
 }
 
@@ -18,13 +15,16 @@
 
 .columns-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: self-start;
   gap: 24px;
+  width: 1120px;
 }
 
 .column {
+  height: 226px;
   flex: 1;
-  padding: 20px;
+  padding: 12px;
   text-align: center;
   border-left: 1px solid #0b1215;
 }
@@ -67,7 +67,7 @@
 
 .feature-text {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: #0b1215;
   line-height: 1.5;
@@ -88,7 +88,7 @@
 /* Зелена іконка (угорі ліворуч) */
 .green {
   top: -84px; /* Відступ зверху від секції */
-  left: 250px; /* Відступ зліва від ширини секції */
+  left: 217px; /* Відступ зліва від ширини секції */
   width: 75px;
   height: 75px;
 }
@@ -96,7 +96,7 @@
 /* Синя іконка (внизу праворуч) */
 .blue {
   bottom: -120px; /* Відступ знизу від секції */
-  right: 172px; /* Відступ справа від ширини секції */
+  right: 140px; /* Відступ справа від ширини секції */
   width: 92px;
   height: 92px;
 }
@@ -104,14 +104,14 @@
 /* Рожева іконка (по центру праворуч) */
 .pink {
   top: -40px; /* Вирівнювання по центру секції */
-  left: 314px; /* Відступ справа від ширини секції */
+  left: 273px; /* Відступ справа від ширини секції */
 
   width: 87px;
   height: 88px;
 }
 
 /* Адаптація для мобільних пристроїв */
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   #why-choose-this-game {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -119,10 +119,10 @@
   .columns-container {
     flex-direction: column;
     gap: 12px;
+    width: 288px;
   }
 
   .column {
-    padding: 0px 0px 12px 0px;
     width: 288px;
     height: 123px;
     border-left: none;
@@ -147,7 +147,7 @@
 
   /* Синю іконку переміщуємо донизу */
   .blue {
-    bottom: -32px;
+    bottom: -62px;
     right: 137px;
     width: 46px;
     height: 46px;

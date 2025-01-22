@@ -1,24 +1,24 @@
 #features {
   margin-top: 120px;
   background-image: url('../image/Rectangle.png'); /* Зображення на фон */
-  width: 1400px;
-  height: 665px;
+  width: 1200px;
+  height: 658px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 82px;
   padding-bottom: 120px;
 }
 .features-container {
-  max-width: 1400px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .unique-features {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Відстань між блоками */
+  gap: 32px;
   text-align: center;
-  width: 1320px;
+  width: 1120px;
   background-size: cover;
 }
 
@@ -34,8 +34,7 @@
   align-items: center; /* Горизонтальне вирівнювання елементів */
   gap: 10px; /* Відстань між елементами */
   border-bottom: 1px solid #0b1215;
-  padding: 0px 0px 24px 0px;
-  width: 1320px;
+  padding: 0px 0px 32.5px 0px;
   height: 70px;
 }
 
@@ -44,27 +43,29 @@
   font-weight: 400;
   font-size: 40px;
   color: #ffd685;
-  margin-right: 80px;
+  margin-right: 40px;
 }
 
 .f-title {
   font-weight: 700;
   font-size: 24px;
   width: 212px;
+  line-height: 121%;
+  text-align: start;
 }
 
 .description {
   font-weight: 400;
-  font-size: 24px;
-  margin-left: 80px; /* Відступ між заголовком і описом */
-  text-align: left; /* Вирівнювання тексту по лівому краю */
+  font-size: 20px;
+  margin-left: 40px;
+  text-align: left;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .features-container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
   }
   #features {
@@ -95,7 +96,7 @@
     flex-direction: row;
     flex-wrap: wrap; /* Цифра і заголовок в одному рядку */
     justify-content: left;
-    gap: 10px;
+    gap: 8px;
     padding: 0;
     width: 288px;
     border-bottom: none;
@@ -121,5 +122,6 @@
     text-align: left;
     text-wrap: wrap; /* Вирівнюємо текст по лівому краю */
     border-bottom: 1px solid #0b1215;
+    padding-bottom: 12px;
   }
 }

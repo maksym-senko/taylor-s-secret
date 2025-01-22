@@ -10,6 +10,7 @@
 
 .upper-row {
   display: flex;
+  flex-direction: row;
   gap: 24px;
   align-items: flex-start;
 }
@@ -25,7 +26,7 @@
 .arrow-box {
   border-radius: 24px;
   padding: 40px;
-  width: 424px;
+  width: 357px;
   height: 90px;
   display: flex; /* Додаємо flexbox */
   align-items: center; /* Вирівнюємо по вертикалі */
@@ -64,7 +65,7 @@
   text-align: left;
   border-radius: 24px;
   padding: 40px;
-  width: 424px;
+  width: 357px;
   height: 204px;
 }
 
@@ -76,15 +77,16 @@
 
 .benefit-box h3 {
   font-weight: 700;
-  font-size: 24px;
-  color: 0B1215;
-  line-height: 1.2;
+  font-size: 20px;
+  color: #0B1215;
+  line-height: 121%;
   margin-bottom: 8px;
 }
 
 .benefit-box p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
+  width: 278px;
 }
 
 /* Кольори для кожного квадрата */
@@ -97,6 +99,8 @@
 }
 
 .box4 {
+  width: 357px;
+  height: 204px;
   background-color: #9dc4ea;
 }
 
@@ -104,14 +108,16 @@
   border: 1px solid #0b1215;
   border-radius: 24px;
   padding: 40px;
-  width: 424px;
+  width: 357px;
   height: 204px;
 }
 
 .box6 {
+  width: 357px;
+  height: 204px;
   background-color: #91ba78;
 }
-@media (min-width: 320px) and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   #benefits {
     margin-bottom: 80px;
     margin-top: 80px;
@@ -174,5 +180,6 @@
   .benefit-box p {
     font-weight: 400;
     font-size: 16px;
+    width: 240px;
   }
 }

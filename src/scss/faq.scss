@@ -25,6 +25,12 @@
     background-color: #91ba78;
   }
 
+  .question {
+    font-size: 24px; /* Зменшуємо розмір шрифта для мобільних */
+    font-weight: bold;
+    margin: 0;
+  }
+
   .question-box {
     background-color: transparent;
     border: 1px solid #0b1215;
@@ -42,12 +48,6 @@
     align-items: flex-start; /* Відповідь ліворуч */
     justify-content: center; /* Вертикальне вирівнювання питання */
 
-    .question {
-      font-size: 18px; /* Зменшуємо розмір шрифта для мобільних */
-      font-weight: bold;
-      margin: 0;
-    }
-
     .toggle-icon {
       background-color: #000;
       color: #fff;
@@ -60,11 +60,12 @@
       font-size: 16px; /* Зменшуємо шрифт в іконці */
       transition: background-color 0.3s;
       position: absolute;
-      top: 50%; /* Центруємо по осі Y */
+      width: 48px;
+      height: 48px;
+      font-size: 30px;
+      top: 50%;
       right: 16px;
-      transform: translateY(
-        -50%
-      ); /* Коригуємо для ідеального вертикального центру */
+      transform: translateY(-50%);
     }
 
     .toggle-icon:hover {
@@ -85,20 +86,23 @@
     &.active {
       background-color: #91ba78; /* Зелений фон */
       border-color: #0b1215; /* Темно-зелений контур */
-      height: 144px; /* Висота при відкритті (збільшена для мобільних) */
+      height: 144px;
 
       .toggle-icon {
-        background-color: #000; /* Темно-зелений колір іконки */
+        top: 28%;
+        width: 48px;
+        height: 48px;
+        font-size: 30px;
+        background-color: #0b1215;
       }
 
       .answer {
-        display: block; /* Відображення відповіді */
+        display: block;
       }
     }
   }
 
-  /* Медіа-запит для адаптації під мобільні екрани */
-  @media (min-width: 320px) and (max-width: 1200px) {
+  @media (min-width: 320px) and (max-width: 1199px) {
     .faq-title {
       font-weight: 400;
       font-size: 24px;
@@ -109,13 +113,6 @@
     .accordion {
       gap: 12px; /* Зменшуємо відстань між елементами */
     }
-
-    .question-box {
-      padding: 12px;
-      width: 288px;
-      height: 72px; /* Висота до відкриття */
-    }
-
     .question {
       font-size: 16px; /* Зменшуємо шрифт питання */
       align-items: flex-start;
@@ -124,27 +121,31 @@
       line-height: 1.1;
     }
 
+    .question-box {
+      padding: 12px;
+      width: 288px;
+      height: 72px;
+    }
+
     .toggle-icon {
-      width: 36px; /* Зменшуємо розмір іконки */
-      height: 36px; /* Зменшуємо розмір іконки */
-      font-size: 14px; /* Зменшуємо шрифт в іконці */
-      top: 50%; /* Центруємо по осі Y */
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
       right: 12px;
-      transform: translateY(
-        -50%
-      ); /* Коригуємо для ідеального вертикального центру */
     }
 
     .answer {
-      margin-top: 12px; /* Менший відступ від питання */
+      margin-top: 12px;
     }
 
     .answer-text {
-      font-size: 14px; /* Зменшуємо розмір шрифта відповіді */
+      font-size: 14px;
+      width: 216px;
     }
 
     .question-box.active {
-      height: 144px; /* Збільшена висота при відкритті */
+      height: 144px;
     }
+    
   }
 }
