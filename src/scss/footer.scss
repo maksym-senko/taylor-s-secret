@@ -5,9 +5,9 @@
 }
 .footer-image {
   border-radius: 24px;
-  width: 760px;
+  width: 643px;
   height: 303px;
-  overflow: visible;
+  object-fit: cover;
 }
 
 .footer-text-container {
@@ -18,15 +18,17 @@
   border-radius: 24px;
   margin-left: 24px;
   padding: 40px;
+  width: 453px;
+  height: 303px;
 }
 
 .footer-title {
-  width: 456px;
+  width: 373px;
   font-family: 'Lilita One', sans-serif;
   font-weight: 400;
   font-size: 40px;
   color: #0b1215;
-  line-height: 45px;
+  line-height: 115%;
 }
 
 .footer-text {
@@ -37,7 +39,7 @@
 }
 
 .footer-police-container {
-  width: 1320px;
+  width: 1120px;
   display: flex;
   flex-direction: row;
   margin-bottom: 32px;
@@ -192,47 +194,7 @@
   margin-bottom: 80px;
 }
 
-// Modal Terms of Conditions
-.terms-conditions-title {
-  font-size: 40px;
-  margin-bottom: 32px;
-}
 
-.terms-conditions-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 32px;
-}
-
-.terms-conditions-first-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin: 32px 0;
-}
-
-.terms-conditions-last-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-.terms-contact-title {
-  font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.terms-contact-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 32px;
-}
-
-.terms-contact-last-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 80px;
-}
 @media (min-width: 320px) and (max-width: 1199px) {
   .footer-container {
     display: flex;
@@ -245,7 +207,7 @@
     font-size: 24px;
     line-height: 1.2;
     width: 288px;
-    margin-bottom: 16px; /* Відступ між титулом і кнопкою Google Play */
+    margin-bottom: 16px; 
   }
 
   .footer-btn {
@@ -270,10 +232,11 @@
     padding: 0;
     border: none;
     margin-bottom: 16px;
+    height: auto;
   }
 
   .footer-text {
-    font-size: 16px; /* Зменшення розміру шрифту */
+    font-size: 16px;
     align-items: center;
     text-align: center;
   }

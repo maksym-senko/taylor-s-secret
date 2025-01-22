@@ -5,13 +5,13 @@
     background-color: #fff8eb;
     border-radius: 16px;
     border: 1px solid #0b1215;
-    margin-top: 16px;
-    margin-bottom: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .nav-menu {
@@ -47,7 +47,7 @@
 
   .header {
     position: sticky;
-    top: 16px;
+    top: 0;
     z-index: 1000;
   }
 
@@ -75,8 +75,10 @@
     border: none;
     cursor: pointer;
     position: relative;
-    width: 30px;
+    width: 24px;
     height: 24px;
+    display: flex;
+    justify-content: center;
   }
 
   .menu-icon,
@@ -86,8 +88,8 @@
     display: block;
     position: absolute;
     background-color: #0b1215;
-    height: 3px;
-    width: 24px;
+    height: 2px;
+    width: 19px;
     border-radius: 2px;
     transition: all 0.3s ease;
   }
@@ -98,11 +100,11 @@
   }
 
   .menu-icon::before {
-    top: -8px;
+    top: -6px;
   }
   
   .menu-icon::after {
-    top: 8px;
+    top: 6px;
   }
 
   .menu-toggle.expanded .menu-icon {
@@ -162,8 +164,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
   .nav-container {
-    width: 1320px;
+    width: 1120px;
     margin-top: 32px;
     margin-bottom: 48px;
     display: flex;
@@ -183,16 +191,17 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
-    width: 500px;
+    width: 429px;
     height: 82px;
-    gap: 40px;
+    gap: 32px;
   }
 
   .nav-menu a {
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 145%;
     color: #0b1215;
   }
 
@@ -202,7 +211,7 @@
 
   .logo {
     width: 184px;
-    margin: 0 43.66px;
+    margin: 0 23.67px;
   }
 
   .nav-menu-mobile {
@@ -216,9 +225,5 @@
   .menu-toggle {
     display: none;
   }
-  .header {
-    position: sticky;
-    top: 0; /* Прикріплюється до верхньої частини вікна */
-    z-index: 1000; /* Щоб не перекривався іншим контентом */
-  }
+
 }

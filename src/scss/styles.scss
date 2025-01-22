@@ -22,25 +22,24 @@ body {
   background-color: #fff8eb;
   color: #242424;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1199px) {
   .container {
-    max-width: 320px;
+    width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1400px;
+    width: 1200px;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;

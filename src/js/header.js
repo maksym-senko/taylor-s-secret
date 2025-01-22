@@ -15,10 +15,7 @@ const toggleMenu = () => {
   mobilePolice.classList.toggle('expanded');
   menuToggle.classList.toggle('expanded');
 
-  // Оновлення іконки меню
-  menuIcon.src = isExpanded
-    ? './image/cross-menu.png' // Іконка для відкритого меню
-    : './image/menu-open.png'; // Іконка для закритого меню
+
 };
 
 // Функція для закриття меню
