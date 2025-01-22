@@ -118,10 +118,10 @@
   .columns-container {
     flex-direction: column;
     gap: 12px;
+    width: 288px;
   }
 
   .column {
-    padding: 0px 0px 12px 0px;
     width: 288px;
     height: 123px;
     border-left: none;
@@ -146,7 +146,7 @@
 
   /* Синю іконку переміщуємо донизу */
   .blue {
-    bottom: -32px;
+    bottom: -62px;
     right: 137px;
     width: 46px;
     height: 46px;
