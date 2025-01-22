@@ -12,7 +12,7 @@ menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('expanded');
   mobilePolice.classList.toggle('expanded');
 
-  menuIcon.src = isExpanded ? './image/menu-open.png' : './image/menu.png';
+  menuIcon.src = isExpanded ? './image/open.png' : './image/menu.png';
 });
 
 navLinks.forEach(link => {
@@ -21,7 +21,7 @@ navLinks.forEach(link => {
     navigation.classList.remove('expanded');
     mobileMenu.classList.remove('expanded');
     mobilePolice.classList.remove('expanded');
-    menuIcon.src = './image/cross-menu.png';
+    menuIcon.src = './image/menu.png';
   });
 });
 
