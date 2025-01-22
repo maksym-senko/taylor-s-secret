@@ -5,7 +5,7 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle('expanded');
   mobilePolice.classList.toggle('expanded');
 
-  menuIcon.src = isExpanded ? './image/close.png' : './image/open.png';
+  menuIcon.src = isExpanded ? '/image/close.png' : '/image/open.png';
 };
 
 // Функція для закриття меню
@@ -14,7 +14,7 @@ const closeMenu = () => {
   navigation.classList.remove('expanded');
   mobileMenu.classList.remove('expanded');
   mobilePolice.classList.remove('expanded');
-  menuIcon.src = './image/close.png';
+  menuIcon.src = '/image/close.png';
 };
 
 // Вибір елементів
