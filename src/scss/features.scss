@@ -96,7 +96,7 @@
     flex-direction: row;
     flex-wrap: wrap; /* Цифра і заголовок в одному рядку */
     justify-content: left;
-    gap: 10px;
+    gap: 8px;
     padding: 0;
     width: 288px;
     border-bottom: none;
@@ -122,5 +122,6 @@
     text-align: left;
     text-wrap: wrap; /* Вирівнюємо текст по лівому краю */
     border-bottom: 1px solid #0b1215;
+    padding-bottom: 12px;
   }
 }

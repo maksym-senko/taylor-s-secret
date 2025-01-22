@@ -1,11 +1,11 @@
 .info-content {
-  margin: 16px;
   border-radius: 16px;
   padding: 12px 16px;
   width: 288px;
   height: 48px;
   background-color: #ffd685;
   width: 288px;
+  margin: 16px auto;
 }
 
 .info-link {
@@ -25,8 +25,9 @@
 }
 
 .privacy-info-container {
-  width: 100%;
+  width: 320px;
   padding: 0 16px;
+  margin: 0 auto;
 }
 
 .privacy-info-title {
@@ -202,7 +203,7 @@
     gap: 32px;
     margin-bottom: 32px;
   }
-  
+
   .privacy-text-info {
     width: 1120px;
   }
