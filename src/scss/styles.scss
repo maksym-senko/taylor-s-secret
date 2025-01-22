@@ -1,6 +1,4 @@
 @import './reset.scss';
-@import './info-police.scss';
-@import './info-terms.scss';
 @import './header.scss';
 @import './hero.scss';
 @import './meet-taylor.scss';
@@ -33,16 +31,18 @@ body {
 
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 100%;
+    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .container {
+    max-width: 1400px;
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 auto;
   }
 }
