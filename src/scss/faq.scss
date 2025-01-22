@@ -120,7 +120,7 @@
     .question-box {
       padding: 12px;
       width: 288px;
-      height: 72px; /* Висота до відкриття */
+      height: 72px;
     }
 
     .toggle-icon {
@@ -135,15 +135,17 @@
     }
 
     .answer {
-      margin-top: 12px; /* Менший відступ від питання */
+      margin-top: 12px;
     }
 
     .answer-text {
-      font-size: 14px; /* Зменшуємо розмір шрифта відповіді */
+      font-size: 14px;
+      width: 216px;
     }
 
     .question-box.active {
-      height: 144px; /* Збільшена висота при відкритті */
+      height: 144px;
     }
+    
   }
 }
