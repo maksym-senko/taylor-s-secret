@@ -74,13 +74,49 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    width: 30px;
+    height: 24px;
   }
 
-  .menu-toggle img {
+  .menu-icon,
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #0b1215;
+    height: 3px;
     width: 24px;
-    height: 24px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-icon::before {
+    top: -8px;
+  }
+  
+  .menu-icon::after {
+    top: 8px;
+  }
+
+  .menu-toggle.expanded .menu-icon {
+    background-color: transparent;
+  }
+  
+  .menu-toggle.expanded .menu-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle.expanded .menu-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
   }
 
   .nav-menu-mobile {
