@@ -1,7 +1,7 @@
-import iconHover from './image/hover.png';
-import iconPlus from './image/plus.png';
-import iconFocus from './image/focus.png';
-import iconMinus from './image/minus.png';
+import iconHover from '../image/hover.png';
+import iconPlus from '../image/plus.png';
+import iconFocus from '../image/focus.png';
+import iconMinus from '../image/minus.png';
 
 document.querySelectorAll('.question-box').forEach(box => {
   const icon = box.querySelector('.icon');
