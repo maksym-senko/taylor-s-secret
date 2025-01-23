@@ -7,24 +7,32 @@ import iconMinusHover from '../image/hover-minus.png';
 document.querySelectorAll('.question-box').forEach(box => {
   const icon = box.querySelector('.icon');
 
-  // Ховер на .question-box
-  box.addEventListener('mouseenter', () => {
+  // Ховер для миші та мобільних пристроїв
+  const handleHoverStart = () => {
     if (box.classList.contains('active') && icon) {
       icon.src = iconMinusHover; // Ховер для відкритого елемента
     } else if (!box.classList.contains('active') && icon) {
       icon.src = iconHover; // Ховер для закритого елемента
     }
-  });
+  };
 
-  box.addEventListener('mouseleave', () => {
+  const handleHoverEnd = () => {
     if (box.classList.contains('active') && icon) {
       icon.src = iconMinus; // Повернення мінуса для відкритого елемента
     } else if (!box.classList.contains('active') && icon) {
       icon.src = iconPlus; // Повернення плюса для закритого елемента
     }
-  });
+  };
 
-  // Фокус на .question-box (якщо він може отримати фокус)
+  // Додавання подій для миші
+  box.addEventListener('mouseenter', handleHoverStart);
+  box.addEventListener('mouseleave', handleHoverEnd);
+
+  // Додавання подій для мобільних пристроїв
+  box.addEventListener('touchstart', handleHoverStart);
+  box.addEventListener('touchend', handleHoverEnd);
+
+  // Фокус на .question-box
   box.addEventListener('focus', () => {
     if (!box.classList.contains('active') && icon) {
       icon.src = iconFocus; // Зміна іконки при фокусі
